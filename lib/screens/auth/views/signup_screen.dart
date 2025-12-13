@@ -3,7 +3,7 @@ import 'package:e_commerce/screens/auth/views/components/sign_up_form.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
-import '../../../constants.dart';
+import '../../../constants/constants.dart';
 
 class SignUpScreen extends StatefulWidget {
   const SignUpScreen({super.key});

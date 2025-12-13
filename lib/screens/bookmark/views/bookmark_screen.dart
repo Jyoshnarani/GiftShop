@@ -4,7 +4,7 @@ import 'package:e_commerce/route/route_constants.dart';
 import 'package:flutter/material.dart';
 
 
-import '../../../constants.dart';
+import '../../../constants/constants.dart';
 
 class BookmarkScreen extends StatelessWidget {
   const BookmarkScreen({super.key});

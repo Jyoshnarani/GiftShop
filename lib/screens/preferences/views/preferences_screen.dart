@@ -1,4 +1,4 @@
-import 'package:e_commerce/constants.dart';
+import 'package:e_commerce/constants/constants.dart';
 import 'package:flutter/material.dart';
 
 import 'components/preference_list_tile.dart';

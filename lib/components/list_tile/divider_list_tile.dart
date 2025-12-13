@@ -1,3 +1,4 @@
+import 'package:e_commerce/constants/icon_constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -28,7 +29,7 @@ class DividerListTile extends StatelessWidget {
           title: title,
           trailing: isShowForwardArrow
               ? SvgPicture.asset(
-                  "assets/icons/miniRight.svg",
+                  iconMiniRight,
                   colorFilter: ColorFilter.mode(
                       Theme.of(context).iconTheme.color!.withOpacity(0.4),
                       BlendMode.srcIn),
@@ -80,7 +81,7 @@ class DividerListTileWithTrilingText extends StatelessWidget {
                 const Spacer(),
                 Text(trilingText),
                 SvgPicture.asset(
-                  "assets/icons/miniRight.svg",
+                  iconMiniRight,
                   colorFilter: ColorFilter.mode(
                       Theme.of(context).iconTheme.color!.withOpacity(0.4),
                       BlendMode.srcIn),

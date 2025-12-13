@@ -2,7 +2,7 @@ import 'package:e_commerce/theme/button_theme.dart';
 import 'package:e_commerce/theme/input_decoration_theme.dart';
 import 'package:flutter/material.dart';
 
-import '../constants.dart';
+import '../constants/constants.dart';
 import 'checkbox_themedata.dart';
 import 'theme_data.dart';
 

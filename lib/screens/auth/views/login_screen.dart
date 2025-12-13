@@ -1,4 +1,4 @@
-import 'package:e_commerce/constants.dart';
+import 'package:e_commerce/constants/constants.dart';
 import 'package:e_commerce/route/route_constants.dart';
 import 'package:flutter/material.dart';
 

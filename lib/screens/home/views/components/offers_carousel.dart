@@ -8,7 +8,7 @@ import 'package:e_commerce/components/dot_indicators.dart';
 import 'package:flutter/material.dart';
 
 
-import '../../../../constants.dart';
+import '../../../../constants/constants.dart';
 
 class OffersCarousel extends StatefulWidget {
   const OffersCarousel({

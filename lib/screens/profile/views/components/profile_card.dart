@@ -1,8 +1,9 @@
 import 'package:e_commerce/components/network_image_with_loader.dart';
+import 'package:e_commerce/constants/icon_constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-import '../../../../constants.dart';
+import '../../../../constants/constants.dart';
 
 class ProfileCard extends StatelessWidget {
   const ProfileCard({
@@ -68,7 +69,7 @@ class ProfileCard extends StatelessWidget {
       subtitle: Text(email),
       trailing: isShowArrow
           ? SvgPicture.asset(
-              "assets/icons/miniRight.svg",
+              iconMiniRight,
               color: Theme.of(context).iconTheme.color!.withOpacity(0.4),
             )
           : null,

@@ -1,9 +1,8 @@
-import 'package:e_commerce/components/buy_full_ui_kit.dart';
 import 'package:e_commerce/components/cart_button.dart';
 import 'package:e_commerce/components/custom_modal_bottom_sheet.dart';
 import 'package:e_commerce/components/product/product_card.dart';
-import 'package:e_commerce/constants.dart';
-import 'package:e_commerce/route/route_constants.dart';
+import 'package:e_commerce/constants/constants.dart';
+import 'package:e_commerce/constants/icon_constants.dart';
 import 'package:e_commerce/screens/product/views/product_returns_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
@@ -49,7 +48,7 @@ class ProductDetailsScreen extends StatelessWidget {
               actions: [
                 IconButton(
                   onPressed: () {},
-                  icon: SvgPicture.asset("assets/icons/Bookmark.svg",
+                  icon: SvgPicture.asset(iconBookmark,
                       color: Theme.of(context).textTheme.bodyLarge!.color),
                 ),
               ],
@@ -67,7 +66,7 @@ class ProductDetailsScreen extends StatelessWidget {
               numOfReviews: 126,
             ),
             ProductListTile(
-              svgSrc: "assets/icons/Return.svg",
+              svgSrc: iconReturn,
               title: "Returns",
               isShowBottomBorder: true,
               press: () {
@@ -93,7 +92,7 @@ class ProductDetailsScreen extends StatelessWidget {
               ),
             ),
             ProductListTile(
-              svgSrc: "assets/icons/Chat.svg",
+              svgSrc: iconChat,
               title: "Reviews",
               isShowBottomBorder: true,
               press: () {

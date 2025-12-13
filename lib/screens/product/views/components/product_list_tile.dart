@@ -1,3 +1,4 @@
+import 'package:e_commerce/constants/icon_constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -30,7 +31,7 @@ class ProductListTile extends StatelessWidget {
             ),
             title: Text(title),
             trailing: SvgPicture.asset(
-              "assets/icons/miniRight.svg",
+              iconMiniRight,
               color: Theme.of(context).textTheme.bodyMedium!.color,
             ),
           ),

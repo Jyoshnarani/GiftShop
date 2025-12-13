@@ -12,6 +12,8 @@ const productImage2 = "https://i.pinimg.com/736x/0d/a6/93/0da69389d1640aa21238e4
 //https://images.pexels.com/photos/5498382/pexels-photo-5498382.jpeg
 
 
+
+
 const grandisExtendedFont = "Grandis Extended";
 
 const Color primaryColor = Color(0xFF7B61FF);

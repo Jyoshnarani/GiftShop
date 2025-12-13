@@ -2,7 +2,7 @@ import 'package:e_commerce/components/Banner/L/banner_l.dart';
 import 'package:flutter/material.dart';
 
 
-import '../../../constants.dart';
+import '../../../constants/constants.dart';
 
 class BannerLStyle1 extends StatelessWidget {
   const BannerLStyle1({

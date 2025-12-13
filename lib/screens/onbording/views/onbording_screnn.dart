@@ -1,5 +1,6 @@
 import 'package:e_commerce/components/dot_indicators.dart';
-import 'package:e_commerce/constants.dart';
+import 'package:e_commerce/constants/constants.dart';
+import 'package:e_commerce/constants/icon_constants.dart';
 import 'package:e_commerce/route/route_constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
@@ -132,7 +133,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                         shape: const CircleBorder(),
                       ),
                       child: SvgPicture.asset(
-                        "assets/icons/Arrow - Right.svg",
+                        iconArrowRight,
                         colorFilter: const ColorFilter.mode(
                           Colors.white,
                           BlendMode.srcIn,

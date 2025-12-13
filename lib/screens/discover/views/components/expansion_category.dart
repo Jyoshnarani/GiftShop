@@ -1,8 +1,7 @@
-import 'package:e_commerce/route/route_constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-import '../../../../constants.dart';
+import '../../../../constants/constants.dart';
 
 class ExpansionCategory extends StatelessWidget {
   const ExpansionCategory({

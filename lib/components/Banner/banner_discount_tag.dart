@@ -1,7 +1,8 @@
+import 'package:e_commerce/constants/icon_constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-import '../../constants.dart';
+import '../../constants/constants.dart';
 
 class BannerDiscountTag extends StatelessWidget {
   const BannerDiscountTag({
@@ -24,7 +25,7 @@ class BannerDiscountTag extends StatelessWidget {
         alignment: Alignment.center,
         children: [
           SvgPicture.asset(
-            "assets/icons/Discount_tag.svg",
+            iconDiscountTag,
             fit: BoxFit.fill,
             colorFilter:
                 const ColorFilter.mode(Colors.white70, BlendMode.srcIn),

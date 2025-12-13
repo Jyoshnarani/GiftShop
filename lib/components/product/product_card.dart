@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../constants.dart';
+import '../../constants/constants.dart';
 import '../network_image_with_loader.dart';
 
 class ProductCard extends StatelessWidget {

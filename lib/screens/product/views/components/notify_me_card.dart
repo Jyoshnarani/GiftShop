@@ -1,8 +1,9 @@
+import 'package:e_commerce/constants/icon_constants.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-import '../../../../constants.dart';
+import '../../../../constants/constants.dart';
 
 class NotifyMeCard extends StatelessWidget {
   const NotifyMeCard({
@@ -51,7 +52,7 @@ class NotifyMeCard extends StatelessWidget {
                       side: const BorderSide(color: Colors.white10),
                     ),
                     child: SvgPicture.asset(
-                      "assets/icons/Notification.svg",
+                      iconNotification,
                       color: Colors.white,
                     ),
                   ),

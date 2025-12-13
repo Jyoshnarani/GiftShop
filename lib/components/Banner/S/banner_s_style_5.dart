@@ -1,8 +1,9 @@
+import 'package:e_commerce/constants/icon_constants.dart';
 import 'package:flutter/material.dart';
 
 import 'package:flutter_svg/svg.dart';
 
-import '../../../constants.dart';
+import '../../../constants/constants.dart';
 import 'banner_s.dart';
 
 class BannerSStyle5 extends StatelessWidget {
@@ -78,7 +79,7 @@ class BannerSStyle5 extends StatelessWidget {
               ),
               const SizedBox(width: defaultPadding),
               SvgPicture.asset(
-                "assets/icons/miniRight.svg",
+                iconMiniRight,
                 height: 28,
                 colorFilter:
                     const ColorFilter.mode(Colors.white, BlendMode.srcIn),

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../constants.dart';
+import '../../../constants/constants.dart';
 import 'product_card_skelton.dart';
 
 class ProductsSkelton extends StatelessWidget {

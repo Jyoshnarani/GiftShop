@@ -1,7 +1,8 @@
+import 'package:e_commerce/constants/icon_constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-import '../../../../constants.dart';
+import '../../../../constants/constants.dart';
 
 class LogInForm extends StatelessWidget {
   const LogInForm({
@@ -30,7 +31,7 @@ class LogInForm extends StatelessWidget {
                 padding:
                     const EdgeInsets.symmetric(vertical: defaultPadding * 0.75),
                 child: SvgPicture.asset(
-                  "assets/icons/Message.svg",
+                  iconMessage,
                   height: 24,
                   width: 24,
                   colorFilter: ColorFilter.mode(
@@ -57,7 +58,7 @@ class LogInForm extends StatelessWidget {
                 padding:
                     const EdgeInsets.symmetric(vertical: defaultPadding * 0.75),
                 child: SvgPicture.asset(
-                  "assets/icons/Lock.svg",
+                  iconLock,
                   height: 24,
                   width: 24,
                   colorFilter: ColorFilter.mode(

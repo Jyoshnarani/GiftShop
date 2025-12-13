@@ -2,7 +2,7 @@ import 'package:e_commerce/components/product/product_card.dart';
 import 'package:e_commerce/models/product_model.dart';
 import 'package:flutter/material.dart';
 
-import '../../../../constants.dart';
+import '../../../../constants/constants.dart';
 import '../../../../route/route_constants.dart';
 
 class BestSellers extends StatelessWidget {

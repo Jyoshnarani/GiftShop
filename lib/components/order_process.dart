@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../constants.dart';
+import '../constants/constants.dart';
 
 class OrderProgress extends StatelessWidget {
   const OrderProgress({

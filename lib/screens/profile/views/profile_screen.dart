@@ -1,6 +1,7 @@
 import 'package:e_commerce/components/list_tile/divider_list_tile.dart';
 import 'package:e_commerce/components/network_image_with_loader.dart';
-import 'package:e_commerce/constants.dart';
+import 'package:e_commerce/constants/constants.dart';
+import 'package:e_commerce/constants/icon_constants.dart';
 import 'package:e_commerce/route/route_constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
@@ -46,35 +47,35 @@ class ProfileScreen extends StatelessWidget {
           const SizedBox(height: defaultPadding / 2),
           ProfileMenuListTile(
             text: "Orders",
-            svgSrc: "assets/icons/Order.svg",
+            svgSrc: iconOrder,
             press: () {
             },
           ),
           ProfileMenuListTile(
             text: "Returns",
-            svgSrc: "assets/icons/Return.svg",
+            svgSrc: iconReturn,
             press: () {},
           ),
           ProfileMenuListTile(
             text: "Wishlist",
-            svgSrc: "assets/icons/Wishlist.svg",
+            svgSrc: iconWishlist,
             press: () {},
           ),
           ProfileMenuListTile(
             text: "Addresses",
-            svgSrc: "assets/icons/Address.svg",
+            svgSrc:iconAddress,
             press: () {
             },
           ),
           ProfileMenuListTile(
             text: "Payment",
-            svgSrc: "assets/icons/card.svg",
+            svgSrc: iconCard,
             press: () {
             },
           ),
           ProfileMenuListTile(
             text: "Wallet",
-            svgSrc: "assets/icons/Wallet.svg",
+            svgSrc:iconWallet,
             press: () {
               Navigator.pushNamed(context, walletScreenRoute);
             },
@@ -89,7 +90,7 @@ class ProfileScreen extends StatelessWidget {
             ),
           ),
           DividerListTileWithTrilingText(
-            svgSrc: "assets/icons/Notification.svg",
+            svgSrc: iconNotification,
             title: "Notification",
             trilingText: "Off",
             press: () {
@@ -97,7 +98,7 @@ class ProfileScreen extends StatelessWidget {
           ),
           ProfileMenuListTile(
             text: "Preferences",
-            svgSrc: "assets/icons/Preferences.svg",
+            svgSrc: iconPreferences,
             press: () {
               Navigator.pushNamed(context, preferencesScreenRoute);
             },
@@ -113,13 +114,13 @@ class ProfileScreen extends StatelessWidget {
           ),
           ProfileMenuListTile(
             text: "Language",
-            svgSrc: "assets/icons/Language.svg",
+            svgSrc: iconLanguage,
             press: () {
             },
           ),
           ProfileMenuListTile(
             text: "Location",
-            svgSrc: "assets/icons/Location.svg",
+            svgSrc: iconLocation,
             press: () {},
           ),
           const SizedBox(height: defaultPadding),
@@ -133,13 +134,13 @@ class ProfileScreen extends StatelessWidget {
           ),
           ProfileMenuListTile(
             text: "Get Help",
-            svgSrc: "assets/icons/Help.svg",
+            svgSrc: iconHelp,
             press: () {
             },
           ),
           ProfileMenuListTile(
             text: "FAQ",
-            svgSrc: "assets/icons/FAQ.svg",
+            svgSrc: iconFAQ,
             press: () {},
             isShowDivider: false,
           ),
@@ -150,7 +151,7 @@ class ProfileScreen extends StatelessWidget {
             onTap: () {},
             minLeadingWidth: 24,
             leading: SvgPicture.asset(
-              "assets/icons/Logout.svg",
+             iconLogout,
               height: 24,
               width: 24,
               colorFilter: const ColorFilter.mode(

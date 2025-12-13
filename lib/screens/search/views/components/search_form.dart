@@ -1,3 +1,4 @@
+import 'package:e_commerce/constants/icon_constants.dart';
 import 'package:e_commerce/theme/input_decoration_theme.dart';
 import 'package:flutter/material.dart';
 
@@ -45,7 +46,7 @@ class SearchForm extends StatelessWidget {
           prefixIcon: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 10),
             child: SvgPicture.asset(
-              "assets/icons/Search.svg",
+              iconSearch,
               height: 24,
               color: Theme.of(context).iconTheme.color!.withOpacity(0.3),
             ),
@@ -62,7 +63,7 @@ class SearchForm extends StatelessWidget {
                   child: IconButton(
                     onPressed: onTabFilter,
                     icon: SvgPicture.asset(
-                      "assets/icons/Filter.svg",
+                      iconFilter,
                       height: 24,
                       color: Theme.of(context).iconTheme.color,
                     ),

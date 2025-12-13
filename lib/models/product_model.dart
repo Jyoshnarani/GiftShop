@@ -1,5 +1,5 @@
 // For demo only
-import 'package:e_commerce/constants.dart';
+import 'package:e_commerce/constants/constants.dart';
 
 
 class ProductModel {

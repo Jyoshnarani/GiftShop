@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import '../../../constants/icon_constants.dart';
 import '../banner_discount_tag.dart';
 
-import '../../../constants.dart';
+import '../../../constants/constants.dart';
 import 'banner_s.dart';
 
 class BannerSStyle1 extends StatelessWidget {
@@ -70,7 +71,7 @@ class BannerSStyle1 extends StatelessWidget {
                     backgroundColor: Colors.white,
                   ),
                   child: SvgPicture.asset(
-                    "assets/icons/Arrow - Right.svg",
+                    iconArrowRight,
                     colorFilter:
                         const ColorFilter.mode(Colors.black, BlendMode.srcIn),
                   ),

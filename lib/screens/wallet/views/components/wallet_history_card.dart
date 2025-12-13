@@ -1,8 +1,9 @@
 import 'package:e_commerce/components/product/secondary_product_card.dart';
+import 'package:e_commerce/constants/icon_constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-import '../../../../constants.dart';
+import '../../../../constants/constants.dart';
 
 class WalletHistoryCard extends StatelessWidget {
   const WalletHistoryCard({
@@ -31,7 +32,7 @@ class WalletHistoryCard extends StatelessWidget {
           ListTile(
             minLeadingWidth: 24,
             leading: SvgPicture.asset(
-              isReturn ? "assets/icons/Return.svg" : "assets/icons/Product.svg",
+              isReturn ? iconReturn : iconProduct,
               color: Theme.of(context).iconTheme.color,
               height: 24,
               width: 24,

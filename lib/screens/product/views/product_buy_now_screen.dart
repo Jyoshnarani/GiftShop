@@ -1,13 +1,14 @@
 import 'package:e_commerce/components/cart_button.dart';
 import 'package:e_commerce/components/custom_modal_bottom_sheet.dart';
 import 'package:e_commerce/components/network_image_with_loader.dart';
+import 'package:e_commerce/constants/icon_constants.dart';
 import 'package:e_commerce/screens/product/views/added_to_cart_message_screen.dart';
 import 'package:e_commerce/screens/product/views/components/product_list_tile.dart';
 import 'package:e_commerce/screens/product/views/location_permission_store_availability_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-import '../../../constants.dart';
+import '../../../constants/constants.dart';
 import 'components/product_quantity.dart';
 import 'components/selected_colors.dart';
 import 'components/selected_size.dart';
@@ -51,7 +52,7 @@ class ProductBuyNowScreenState extends State<ProductBuyNowScreen> {
                 ),
                 IconButton(
                   onPressed: () {},
-                  icon: SvgPicture.asset("assets/icons/Bookmark.svg",
+                  icon: SvgPicture.asset(iconBookmark,
                       color: Theme.of(context).textTheme.bodyLarge!.color),
                 ),
               ],
@@ -134,7 +135,7 @@ class ProductBuyNowScreenState extends State<ProductBuyNowScreen> {
                   padding: const EdgeInsets.symmetric(vertical: defaultPadding),
                   sliver: ProductListTile(
                     title: "Check stores",
-                    svgSrc: "assets/icons/Stores.svg",
+                    svgSrc: iconStores,
                     isShowBottomBorder: true,
                     press: () {
                       customModalBottomSheet(

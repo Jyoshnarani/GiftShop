@@ -1,7 +1,8 @@
+import 'package:e_commerce/constants/icon_constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-import '../constants.dart';
+import '../constants/constants.dart';
 
 class ShoppingBag extends StatelessWidget {
   const ShoppingBag({
@@ -23,8 +24,8 @@ class ShoppingBag extends StatelessWidget {
         children: [
           SvgPicture.asset(
             numOfItem == null
-                ? "assets/icons/Bag.svg"
-                : "assets/icons/bag_full.svg",
+                ? iconBag
+                : iconBagFull,
             height: 24,
             width: 24,
             colorFilter: ColorFilter.mode(

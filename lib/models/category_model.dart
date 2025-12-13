@@ -1,3 +1,5 @@
+import 'package:e_commerce/constants/icon_constants.dart';
+
 class CategoryModel {
   final String title;
   final String? image, svgSrc;
@@ -15,7 +17,7 @@ class CategoryModel {
 final List<CategoryModel> demoCategories = [
   CategoryModel(
     title: "On sale",
-    svgSrc: "assets/icons/Sale.svg",
+    svgSrc: iconSale,
     subCategories: [
       CategoryModel(title: "Gift Card"),
       CategoryModel(title: "New In"),
@@ -26,7 +28,7 @@ final List<CategoryModel> demoCategories = [
   ),
   CategoryModel(
     title: "Home and Decor",
-    svgSrc: "assets/icons/Bag.svg",
+    svgSrc: iconBag,
     subCategories: [
       CategoryModel(title: "Candles"),
       CategoryModel(title: "Photo frames"),
@@ -35,7 +37,7 @@ final List<CategoryModel> demoCategories = [
   ),
   CategoryModel(
     title: "Toys",
-    svgSrc: "assets/icons/Bag.svg",
+    svgSrc: iconBag,
     subCategories: [
       CategoryModel(title: "Soft toys"),
       CategoryModel(title: "Educational toys"),
@@ -44,7 +46,7 @@ final List<CategoryModel> demoCategories = [
   ),
   CategoryModel(
     title: "Festive Gifts",
-    svgSrc: "assets/icons/Bag.svg",
+    svgSrc: iconBag,
     subCategories: [
       CategoryModel(title: "Birthday gifts"),
       CategoryModel(title: "Anniversary gifts"),

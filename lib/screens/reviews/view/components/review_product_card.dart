@@ -1,7 +1,7 @@
 import 'package:e_commerce/components/network_image_with_loader.dart';
 import 'package:flutter/material.dart';
 
-import '../../../../constants.dart';
+import '../../../../constants/constants.dart';
 
 class ReviewProductInfoCard extends StatelessWidget {
   const ReviewProductInfoCard({

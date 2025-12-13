@@ -133,7 +133,7 @@
 //                               label:
 //                                   Text(_isCopied ? "Link Copyed" : "Copy link"),
 //                               icon: SvgPicture.asset(
-//                                 "assets/icons/world_map.svg",
+//                                 "assets/icons/worldMap.svg",
 //                                 colorFilter: const ColorFilter.mode(
 //                                   Colors.white,
 //                                   BlendMode.srcIn,

@@ -1,9 +1,9 @@
 import 'package:animations/animations.dart';
-import 'package:e_commerce/constants.dart';
-import 'package:e_commerce/route/route_constants.dart';
+import 'package:e_commerce/constants/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
+import 'constants/icon_constants.dart';
 import 'screens/bookmark/views/bookmark_screen.dart';
 import 'screens/discover/views/discover_screen.dart';
 import 'screens/home/views/home_screen.dart';
@@ -56,7 +56,7 @@ class _EntryPointState extends State<EntryPoint> {
               // Navigator.pushNamed(context, searchScreenRoute);
             },
             icon: SvgPicture.asset(
-              "assets/icons/Search.svg",
+              iconSearch,
               height: 24,
               colorFilter: ColorFilter.mode(
                   Theme.of(context).textTheme.bodyLarge!.color!,
@@ -66,8 +66,7 @@ class _EntryPointState extends State<EntryPoint> {
           IconButton(
             onPressed: () {
             },
-            icon: SvgPicture.asset(
-              "assets/icons/Notification.svg",
+            icon: SvgPicture.asset(iconNotification,
               height: 24,
               colorFilter: ColorFilter.mode(
                   Theme.of(context).textTheme.bodyLarge!.color!,
@@ -111,31 +110,31 @@ class _EntryPointState extends State<EntryPoint> {
           unselectedItemColor: Colors.transparent,
           items: [
             BottomNavigationBarItem(
-              icon: svgIcon("assets/icons/Shop.svg"),
-              activeIcon: svgIcon("assets/icons/Shop.svg", color: primaryColor),
+              icon: svgIcon(iconShop),
+              activeIcon: svgIcon(iconShop, color: primaryColor),
               label: "Shop",
             ),
             BottomNavigationBarItem(
-              icon: svgIcon("assets/icons/Category.svg"),
+              icon: svgIcon(iconCategory),
               activeIcon:
-                  svgIcon("assets/icons/Category.svg", color: primaryColor),
+                  svgIcon(iconCategory, color: primaryColor),
               label: "Discover",
             ),
             BottomNavigationBarItem(
-              icon: svgIcon("assets/icons/Bookmark.svg"),
+              icon: svgIcon(iconBookmark),
               activeIcon:
-                  svgIcon("assets/icons/Bookmark.svg", color: primaryColor),
+                  svgIcon(iconBookmark, color: primaryColor),
               label: "Bookmark",
             ),
             // BottomNavigationBarItem(
-            //   icon: svgIcon("assets/icons/Bag.svg"),
-            //   activeIcon: svgIcon("assets/icons/Bag.svg", color: primaryColor),
+            //   icon: svgIcon(iconBag),
+            //   activeIcon: svgIcon(iconBag, color: primaryColor),
             //   label: "Cart",
             // ),
             BottomNavigationBarItem(
-              icon: svgIcon("assets/icons/Profile.svg"),
+              icon: svgIcon(iconProfile),
               activeIcon:
-                  svgIcon("assets/icons/Profile.svg", color: primaryColor),
+                  svgIcon(iconProfile, color: primaryColor),
               label: "Profile",
             ),
           ],

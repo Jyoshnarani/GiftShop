@@ -1,9 +1,10 @@
 import 'dart:async';
 
+import 'package:e_commerce/constants/icon_constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-import '../../../constants.dart';
+import '../../../constants/constants.dart';
 import '../../blur_container.dart';
 import 'banner_m.dart';
 
@@ -74,7 +75,7 @@ class _BannerMWithCounterState extends State<BannerMWithCounter> {
                 Padding(
                   padding: const EdgeInsets.symmetric(
                       horizontal: defaultPadding / 4),
-                  child: SvgPicture.asset("assets/icons/dot.svg"),
+                  child: SvgPicture.asset(iconDot),
                 ),
                 BlurContainer(
                   text: _duration.inMinutes
@@ -85,7 +86,7 @@ class _BannerMWithCounterState extends State<BannerMWithCounter> {
                 Padding(
                   padding: const EdgeInsets.symmetric(
                       horizontal: defaultPadding / 4),
-                  child: SvgPicture.asset("assets/icons/dot.svg"),
+                  child: SvgPicture.asset(iconDot),
                 ),
                 BlurContainer(
                   text: _duration.inSeconds

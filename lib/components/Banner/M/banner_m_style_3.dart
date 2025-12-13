@@ -1,10 +1,11 @@
+import 'package:e_commerce/constants/icon_constants.dart';
 import 'package:flutter/material.dart';
 
 import 'package:flutter_svg/svg.dart';
 
 import 'banner_m.dart';
 
-import '../../../constants.dart';
+import '../../../constants/constants.dart';
 
 class BannerMStyle3 extends StatelessWidget {
   const BannerMStyle3({
@@ -74,7 +75,7 @@ class BannerMStyle3 extends StatelessWidget {
                     backgroundColor: Colors.white,
                   ),
                   child: SvgPicture.asset(
-                    "assets/icons/Arrow - Right.svg",
+                    iconArrowRight,
                     colorFilter:
                         const ColorFilter.mode(Colors.black, BlendMode.srcIn),
                   ),

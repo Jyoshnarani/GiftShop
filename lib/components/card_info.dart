@@ -1,8 +1,9 @@
+import 'package:e_commerce/constants/icon_constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-import '../constants.dart';
+import '../constants/constants.dart';
 
 class CardInfo extends StatelessWidget {
   const CardInfo({
@@ -50,7 +51,7 @@ class CardInfo extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               SvgPicture.asset(
-                                "assets/icons/card.svg",
+                               iconCard,
                                 height: 32,
                                 width: 32,
                                 colorFilter: const ColorFilter.mode(
@@ -64,7 +65,7 @@ class CardInfo extends StatelessWidget {
                                     padding: const EdgeInsets.all(
                                         defaultPadding / 4),
                                     child: SvgPicture.asset(
-                                      "assets/icons/Singlecheck.svg",
+                                     iconSingleCheck,
                                       colorFilter: const ColorFilter.mode(
                                           primaryColor, BlendMode.srcIn),
                                     ),
@@ -91,7 +92,7 @@ class CardInfo extends StatelessWidget {
                     child: Stack(
                       children: [
                         SvgPicture.asset(
-                          "assets/icons/Card_Pattern.svg",
+                          iconCardPattern,
                           fit: BoxFit.cover,
                           width: double.infinity,
                         ),
@@ -139,7 +140,7 @@ class CardInfo extends StatelessWidget {
                     padding: const EdgeInsets.symmetric(
                         vertical: defaultPadding * 0.75),
                     child: SvgPicture.asset(
-                      "assets/icons/CVV.svg",
+                      iconCVV,
                       colorFilter: ColorFilter.mode(
                           Theme.of(context)
                               .inputDecorationTheme

@@ -1,8 +1,9 @@
+import 'package:e_commerce/constants/icon_constants.dart';
 import 'package:e_commerce/theme/input_decoration_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-import '../../../constants.dart';
+import '../../../constants/constants.dart';
 
 class LocationPermissionStoreAvailabilityScreen extends StatelessWidget {
   const LocationPermissionStoreAvailabilityScreen({super.key});
@@ -49,7 +50,7 @@ class LocationPermissionStoreAvailabilityScreen extends StatelessWidget {
                           prefixIcon: Padding(
                             padding: const EdgeInsets.all(defaultPadding / 2),
                             child: SvgPicture.asset(
-                              "assets/icons/Search.svg",
+                              iconSearch,
                               height: 24,
                               color: Theme.of(context)
                                   .inputDecorationTheme

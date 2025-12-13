@@ -1,7 +1,8 @@
+import 'package:e_commerce/constants/icon_constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-import '../../../../constants.dart';
+import '../../../../constants/constants.dart';
 
 class ProductQuantity extends StatelessWidget {
   const ProductQuantity({
@@ -34,7 +35,7 @@ class ProductQuantity extends StatelessWidget {
                 style: OutlinedButton.styleFrom(
                     padding: const EdgeInsets.all(defaultPadding / 2)),
                 child: SvgPicture.asset(
-                  "assets/icons/Minus.svg",
+                 iconMinus,
                   color: Theme.of(context).iconTheme.color,
                 ),
               ),
@@ -59,7 +60,7 @@ class ProductQuantity extends StatelessWidget {
                 style: OutlinedButton.styleFrom(
                     padding: const EdgeInsets.all(defaultPadding / 2)),
                 child: SvgPicture.asset(
-                  "assets/icons/Plus1.svg",
+                  iconPlus1,
                   color: Theme.of(context).iconTheme.color,
                 ),
               ),

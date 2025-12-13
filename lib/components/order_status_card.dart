@@ -1,7 +1,8 @@
+import 'package:e_commerce/constants/icon_constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-import '../constants.dart';
+import '../constants/constants.dart';
 import 'order_process.dart';
 
 class OrderStatusCard extends StatelessWidget {
@@ -77,7 +78,7 @@ class OrderStatusCard extends StatelessWidget {
                         ],
                       ),
                       SvgPicture.asset(
-                        "assets/icons/miniRight.svg",
+                        iconMiniRight,
                         height: 24,
                         width: 24,
                         colorFilter: ColorFilter.mode(

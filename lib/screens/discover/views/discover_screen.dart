@@ -1,4 +1,4 @@
-import 'package:e_commerce/constants.dart';
+import 'package:e_commerce/constants/constants.dart';
 import 'package:e_commerce/models/category_model.dart';
 import 'package:e_commerce/screens/search/views/components/search_form.dart';
 import 'package:flutter/material.dart';

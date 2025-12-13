@@ -1,7 +1,6 @@
 import 'package:e_commerce/components/Banner/S/banner_s_style_1.dart';
 import 'package:e_commerce/components/Banner/S/banner_s_style_5.dart';
-import 'package:e_commerce/constants.dart';
-import 'package:e_commerce/route/route_constants.dart';
+import 'package:e_commerce/constants/constants.dart';
 import 'package:flutter/material.dart';
 
 

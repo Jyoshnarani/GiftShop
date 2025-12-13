@@ -1,8 +1,8 @@
-import 'package:e_commerce/route/route_constants.dart';
+import 'package:e_commerce/constants/icon_constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-import '../../../../constants.dart';
+import '../../../../constants/constants.dart';
 
 class CategoryModel {
   final String name;
@@ -19,12 +19,12 @@ List<CategoryModel> demoCategories = [
   CategoryModel(name: "All Categories"),
   CategoryModel(
       name: "On Sale",
-      svgSrc: "assets/icons/Sale.svg"), // route: onSaleScreenRoute
-  CategoryModel(name: "Home and Decor", svgSrc: "assets/icons/Bag.svg"),
-  CategoryModel(name: "Flowers and Plants", svgSrc: "assets/icons/Bag.svg"),
+      svgSrc: iconSale), // route: onSaleScreenRoute
+  CategoryModel(name: "Home and Decor", svgSrc: iconBag),
+  CategoryModel(name: "Flowers and Plants", svgSrc: iconBag),
   CategoryModel(
-      name: "Toys", svgSrc: "assets/icons/Bag.svg"), //, route: kidsScreenRoute
-  CategoryModel(name: "Festive Gift", svgSrc: "assets/icons/Bag.svg"),
+      name: "Toys", svgSrc: iconBag), //, route: kidsScreenRoute
+  CategoryModel(name: "Festive Gift", svgSrc: iconBag),
 ];
 // End For Preview
 

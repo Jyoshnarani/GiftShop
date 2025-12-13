@@ -1,7 +1,7 @@
 import 'package:e_commerce/components/check_mark.dart';
 import 'package:flutter/material.dart';
 
-import '../../../../constants.dart';
+import '../../../../constants/constants.dart';
 
 class ColorDot extends StatelessWidget {
   const ColorDot({
