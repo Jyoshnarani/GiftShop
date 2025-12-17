@@ -1,0 +1,62 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.buildlog/
+.history
+.svn/
+
+# Flutter/Dart
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+/build/
+
+# Android
+/android/app/build/
+/android/.gradle/
+/android/captures/
+/android/local.properties
+/android/key.properties
+*.apk
+*.aab
+
+# iOS
+/ios/build/
+/ios/Pods/
+/ios/Flutter/App.framework
+/ios/Flutter/Flutter.framework
+/ios/Flutter/ephemeral/
+/ios/Flutter/Generated.xcconfig
+/ios/Flutter/flutter_export_environment.sh
+/ios/Flutter/pod_helper.rb
+/ios/Flutter/runner_migration.log
+/ios/Flutter/.generated/
+/ios/Runner/Assets.xcassets/AppIcon.appiconset/
+/ios/Runner.xcworkspace/
+/ios/Runner.xcodeproj/project.xcworkspace/
+/ios/Runner.xcodeproj/xcuserdata/
+*.ipa
+*.mobileprovision
+
+# IDE files
+.idea/
+*.iml
+out/
+gen/
+
+# Generated files
+lib/generated_plugin_registrant.dart
+lib/**.g.dart
+lib/**.freezed.dart
+
+# Web
+/web/build/
+/web/.dart_tool/
+!/.gitignore
