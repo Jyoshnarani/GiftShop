@@ -6,6 +6,7 @@ const String signUpScreenRoute = "signup";
 const String entryPointScreenRoute = "entry_point";
 const String homeScreenRoute = "home";
 const String profileScreenRoute = "profile";
+const String displayBrightness = "displayBrightness";
 const String productDetailsScreenRoute = "product_details";
 const String discoverScreenRoute = "discover";
 const String bookmarkScreenRoute = "bookmark";

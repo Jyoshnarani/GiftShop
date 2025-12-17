@@ -33,7 +33,7 @@ class WalletHistoryCard extends StatelessWidget {
             minLeadingWidth: 24,
             leading: SvgPicture.asset(
               isReturn ? iconReturn : iconProduct,
-              color: Theme.of(context).iconTheme.color,
+              colorFilter: ColorFilter.mode(Theme.of(context).iconTheme.color!, BlendMode.srcIn),
               height: 24,
               width: 24,
             ),

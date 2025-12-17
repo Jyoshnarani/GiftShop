@@ -20,8 +20,8 @@ class EntryPoint extends StatefulWidget {
 class _EntryPointState extends State<EntryPoint> {
   final List _pages = const [
     HomeScreen(),
-    DiscoverScreen(),
-    BookmarkScreen(),
+    // DiscoverScreen(),
+    // BookmarkScreen(),
     // EmptyCartScreen(), // if Cart is empty
     // CartScreen(),
     ProfileScreen(),
@@ -36,7 +36,7 @@ class _EntryPointState extends State<EntryPoint> {
         height: 24,
         colorFilter: ColorFilter.mode(
             color ??
-                Theme.of(context).iconTheme.color!.withOpacity(
+                Theme.of(context).iconTheme.color!.withValues(alpha:
                     Theme.of(context).brightness == Brightness.dark ? 0.3 : 1),
             BlendMode.srcIn),
       );
@@ -114,18 +114,18 @@ class _EntryPointState extends State<EntryPoint> {
               activeIcon: svgIcon(iconShop, color: primaryColor),
               label: "Shop",
             ),
-            BottomNavigationBarItem(
-              icon: svgIcon(iconCategory),
-              activeIcon:
-                  svgIcon(iconCategory, color: primaryColor),
-              label: "Discover",
-            ),
-            BottomNavigationBarItem(
-              icon: svgIcon(iconBookmark),
-              activeIcon:
-                  svgIcon(iconBookmark, color: primaryColor),
-              label: "Bookmark",
-            ),
+            // BottomNavigationBarItem(
+            //   icon: svgIcon(iconCategory),
+            //   activeIcon:
+            //       svgIcon(iconCategory, color: primaryColor),
+            //   label: "Discover",
+            // ),
+            // BottomNavigationBarItem(
+            //   icon: svgIcon(iconBookmark),
+            //   activeIcon:
+            //       svgIcon(iconBookmark, color: primaryColor),
+            //   label: "Bookmark",
+            // ),
             // BottomNavigationBarItem(
             //   icon: svgIcon(iconBag),
             //   activeIcon: svgIcon(iconBag, color: primaryColor),

@@ -70,7 +70,7 @@ class ProfileCard extends StatelessWidget {
       trailing: isShowArrow
           ? SvgPicture.asset(
               iconMiniRight,
-              color: Theme.of(context).iconTheme.color!.withOpacity(0.4),
+              color: Theme.of(context).iconTheme.color!.withValues(alpha: 0.4),
             )
           : null,
     );

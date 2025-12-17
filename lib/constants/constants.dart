@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:form_field_validator/form_field_validator.dart';
+
 
 
 const productImg1 = "https://i.pinimg.com/736x/97/4b/6b/974b6b655cf044df75db6b2d4e2dde8a.jpg";
@@ -11,6 +11,7 @@ const productImage ="https://i.pinimg.com/1200x/23/80/3d/23803da521ea24fc8080cfa
 const productImage2 = "https://i.pinimg.com/736x/0d/a6/93/0da69389d1640aa21238e4d7ebff6971.jpg";
 //https://images.pexels.com/photos/5498382/pexels-photo-5498382.jpeg
 
+final ValueNotifier<ThemeMode> themeNotifier = ValueNotifier(ThemeMode.light);
 
 
 
@@ -41,12 +42,12 @@ const Color blackColor10 = Color(0xFFE8E8E9);
 const Color blackColor5 = Color(0xFFF3F3F4);
 
 const Color whiteColor = Colors.white;
-const Color whileColor80 = Color(0xFFCCCCCC);
-const Color whileColor60 = Color(0xFF999999);
-const Color whileColor40 = Color(0xFF666666);
-const Color whileColor20 = Color(0xFF333333);
-const Color whileColor10 = Color(0xFF191919);
-const Color whileColor5 = Color(0xFF0D0D0D);
+const Color whiteColor80 = Color(0xFFCCCCCC);
+const Color whiteColor60 = Color(0xFF999999);
+const Color whiteColor40 = Color(0xFF666666);
+const Color whiteColor20 = Color(0xFF333333);
+const Color whiteColor10 = Color(0xFF191919);
+const Color whiteColor5 = Color(0xFF0D0D0D);
 
 const Color greyColor = Color(0xFFB8B5C3);
 const Color lightGreyColor = Color(0xFFF8F8F9);
@@ -57,21 +58,10 @@ const Color purpleColor = Color(0xFF7B61FF);
 const Color successColor = Color(0xFF2ED573);
 const Color warningColor = Color(0xFFFFBE21);
 const Color errorColor = Color(0xFFEA5B5B);
+const Color transparent = Colors.transparent;
 
 const double defaultPadding = 16.0;
 const double defaultBorderRadius = 12.0;
 const Duration defaultDuration = Duration(milliseconds: 300);
 
-final passwordValidator = MultiValidator([
-  RequiredValidator(errorText: 'Password is required'),
-  MinLengthValidator(8, errorText: 'password must be at least 8 digits long'),
-  PatternValidator(r'(?=.*?[#?!@$%^&*-])',
-      errorText: 'passwords must have at least one special character')
-]);
 
-final emailIdValidator = MultiValidator([
-  RequiredValidator(errorText: 'Email is required'),
-  EmailValidator(errorText: "Enter a valid email address"),
-]);
-
-const pasNotMatchErrorText = "passwords do not match";

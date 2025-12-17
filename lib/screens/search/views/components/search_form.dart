@@ -41,14 +41,14 @@ class SearchForm extends StatelessWidget {
         decoration: InputDecoration(
           hintText: "Find something...",
           filled: false,
-          border: secodaryOutlineInputBorder(context),
-          enabledBorder: secodaryOutlineInputBorder(context),
+          border: secondaryOutlineInputBorder(context),
+          enabledBorder: secondaryOutlineInputBorder(context),
           prefixIcon: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 10),
             child: SvgPicture.asset(
               iconSearch,
               height: 24,
-              color: Theme.of(context).iconTheme.color!.withOpacity(0.3),
+              color: Theme.of(context).iconTheme.color!.withValues(alpha: 0.3),
             ),
           ),
           suffixIcon: SizedBox(

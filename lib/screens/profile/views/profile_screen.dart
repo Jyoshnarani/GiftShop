@@ -45,34 +45,34 @@ class ProfileScreen extends StatelessWidget {
             ),
           ),
           const SizedBox(height: defaultPadding / 2),
-          ProfileMenuListTile(
-            text: "Orders",
-            svgSrc: iconOrder,
-            press: () {
-            },
-          ),
-          ProfileMenuListTile(
-            text: "Returns",
-            svgSrc: iconReturn,
-            press: () {},
-          ),
-          ProfileMenuListTile(
-            text: "Wishlist",
-            svgSrc: iconWishlist,
-            press: () {},
-          ),
+          // ProfileMenuListTile(
+          //   text: "Orders",
+          //   svgSrc: iconOrder,
+          //   press: () {
+          //   },
+          // ),
+          // ProfileMenuListTile(
+          //   text: "Returns",
+          //   svgSrc: iconReturn,
+          //   press: () {},
+          // ),
+          // ProfileMenuListTile(
+          //   text: "Wishlist",
+          //   svgSrc: iconWishlist,
+          //   press: () {},
+          // ),
           ProfileMenuListTile(
             text: "Addresses",
             svgSrc:iconAddress,
             press: () {
             },
           ),
-          ProfileMenuListTile(
-            text: "Payment",
-            svgSrc: iconCard,
-            press: () {
-            },
-          ),
+          // ProfileMenuListTile(
+          //   text: "Payment",
+          //   svgSrc: iconCard,
+          //   press: () {
+          //   },
+          // ),
           ProfileMenuListTile(
             text: "Wallet",
             svgSrc:iconWallet,
@@ -80,29 +80,29 @@ class ProfileScreen extends StatelessWidget {
               Navigator.pushNamed(context, walletScreenRoute);
             },
           ),
-          const SizedBox(height: defaultPadding),
-          Padding(
-            padding: const EdgeInsets.symmetric(
-                horizontal: defaultPadding, vertical: defaultPadding / 2),
-            child: Text(
-              "Personalization",
-              style: Theme.of(context).textTheme.titleSmall,
-            ),
-          ),
-          DividerListTileWithTrilingText(
-            svgSrc: iconNotification,
-            title: "Notification",
-            trilingText: "Off",
-            press: () {
-            },
-          ),
-          ProfileMenuListTile(
-            text: "Preferences",
-            svgSrc: iconPreferences,
-            press: () {
-              Navigator.pushNamed(context, preferencesScreenRoute);
-            },
-          ),
+          // const SizedBox(height: defaultPadding),
+          // Padding(
+          //   padding: const EdgeInsets.symmetric(
+          //       horizontal: defaultPadding, vertical: defaultPadding / 2),
+          //   child: Text(
+          //     "Personalization",
+          //     style: Theme.of(context).textTheme.titleSmall,
+          //   ),
+          // ),
+          // DividerListTileWithTrilingText(
+          //   svgSrc: iconNotification,
+          //   title: "Notification",
+          //   trilingText: "Off",
+          //   press: () {
+          //   },
+          // ),
+          // ProfileMenuListTile(
+          //   text: "Preferences",
+          //   svgSrc: iconPreferences,
+          //   press: () {
+          //     Navigator.pushNamed(context, preferencesScreenRoute);
+          //   },
+          // ),
           const SizedBox(height: defaultPadding),
           Padding(
             padding: const EdgeInsets.symmetric(
@@ -113,16 +113,23 @@ class ProfileScreen extends StatelessWidget {
             ),
           ),
           ProfileMenuListTile(
+            text: "Display & Brightness",
+            svgSrc: iconSetting,
+            press: () {
+              Navigator.pushNamed(context, displayBrightness);
+            },
+          ),
+          ProfileMenuListTile(
             text: "Language",
             svgSrc: iconLanguage,
             press: () {
             },
           ),
-          ProfileMenuListTile(
-            text: "Location",
-            svgSrc: iconLocation,
-            press: () {},
-          ),
+          // ProfileMenuListTile(
+          //   text: "Location",
+          //   svgSrc: iconLocation,
+          //   press: () {},
+          // ),
           const SizedBox(height: defaultPadding),
           Padding(
             padding: const EdgeInsets.symmetric(

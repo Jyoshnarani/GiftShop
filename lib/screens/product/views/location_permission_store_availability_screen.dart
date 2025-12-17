@@ -44,9 +44,9 @@ class LocationPermissionStoreAvailabilityScreen extends StatelessWidget {
                         decoration: InputDecoration(
                           fillColor: Colors.transparent,
                           hintText: "Find something...",
-                          border: secodaryOutlineInputBorder(context),
-                          enabledBorder: secodaryOutlineInputBorder(context),
-                          focusedBorder: secodaryOutlineInputBorder(context),
+                          border: secondaryOutlineInputBorder(context),
+                          enabledBorder: secondaryOutlineInputBorder(context),
+                          focusedBorder: secondaryOutlineInputBorder(context),
                           prefixIcon: Padding(
                             padding: const EdgeInsets.all(defaultPadding / 2),
                             child: SvgPicture.asset(

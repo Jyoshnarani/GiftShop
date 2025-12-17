@@ -10,16 +10,18 @@ const InputDecorationTheme lightInputDecorationTheme = InputDecorationTheme(
   enabledBorder: outlineInputBorder,
   focusedBorder: focusedOutlineInputBorder,
   errorBorder: errorOutlineInputBorder,
+  focusedErrorBorder: focusedErrorOutlineInputBorder,
 );
 
 const InputDecorationTheme darkInputDecorationTheme = InputDecorationTheme(
   fillColor: darkGreyColor,
   filled: true,
-  hintStyle: TextStyle(color: whileColor40),
+  hintStyle: TextStyle(color: whiteColor40),
   border: outlineInputBorder,
   enabledBorder: outlineInputBorder,
   focusedBorder: focusedOutlineInputBorder,
   errorBorder: errorOutlineInputBorder,
+  focusedErrorBorder: focusedErrorOutlineInputBorder,
 );
 
 const OutlineInputBorder outlineInputBorder = OutlineInputBorder(
@@ -38,14 +40,23 @@ const OutlineInputBorder errorOutlineInputBorder = OutlineInputBorder(
   borderRadius: BorderRadius.all(Radius.circular(defaultBorderRadius)),
   borderSide: BorderSide(
     color: errorColor,
+      width: 1
   ),
 );
 
-OutlineInputBorder secodaryOutlineInputBorder(BuildContext context) {
+const OutlineInputBorder focusedErrorOutlineInputBorder = OutlineInputBorder(
+  borderRadius: BorderRadius.all(Radius.circular(defaultBorderRadius)),
+  borderSide: BorderSide(
+    color: errorColor,
+      width: 1
+  ),
+);
+
+OutlineInputBorder secondaryOutlineInputBorder(BuildContext context) {
   return OutlineInputBorder(
     borderRadius: const BorderRadius.all(Radius.circular(defaultBorderRadius)),
     borderSide: BorderSide(
-      color: Theme.of(context).textTheme.bodyLarge!.color!.withOpacity(0.15),
+      color: Theme.of(context).textTheme.bodyLarge!.color!.withValues(alpha:0.15),
     ),
   );
 }

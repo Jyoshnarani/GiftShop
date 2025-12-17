@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../constants/constants.dart';
 
 const AppBarTheme appBarLightTheme = AppBarTheme(
-  backgroundColor: Colors.white,
+  backgroundColor: whiteColor,
   elevation: 0,
   iconTheme: IconThemeData(color: blackColor),
   titleTextStyle: TextStyle(
@@ -16,11 +16,11 @@ const AppBarTheme appBarLightTheme = AppBarTheme(
 const AppBarTheme appBarDarkTheme = AppBarTheme(
   backgroundColor: blackColor,
   elevation: 0,
-  iconTheme: IconThemeData(color: Colors.white),
+  iconTheme: IconThemeData(color: whiteColor),
   titleTextStyle: TextStyle(
     fontSize: 16,
     fontWeight: FontWeight.w500,
-    color: Colors.white,
+    color: whiteColor,
   ),
 );
 
@@ -51,7 +51,7 @@ DataTableThemeData dataTableDarkThemeData = DataTableThemeData(
   ),
   dataTextStyle: const TextStyle(
     fontWeight: FontWeight.w500,
-    color: Colors.white,
+    color: whiteColor,
     fontSize: 12,
   ),
 );

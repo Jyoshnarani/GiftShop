@@ -1,4 +1,5 @@
 import 'package:e_commerce/constants/icon_constants.dart';
+import 'package:e_commerce/constants/validator.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -39,7 +40,7 @@ class LogInForm extends StatelessWidget {
                           .textTheme
                           .bodyLarge!
                           .color!
-                          .withOpacity(0.3),
+                          .withValues(alpha: 0.3),
                       BlendMode.srcIn),
                 ),
               ),
@@ -66,7 +67,7 @@ class LogInForm extends StatelessWidget {
                           .textTheme
                           .bodyLarge!
                           .color!
-                          .withOpacity(0.3),
+                          .withValues(alpha: 0.3),
                       BlendMode.srcIn),
                 ),
               ),
